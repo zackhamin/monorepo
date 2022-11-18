@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "prettier": "^2.5.1",
+    "turbo": "latest"
+  },
+  "name": "basic",
+  "description": "This is an official starter Turborepo.",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-next": "^12.3.3",
+    "eslint-module-utils": "^2.7.4",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-scope": "^5.1.1",
+    "eslint-utils": "^2.1.0",
+    "eslint-visitor-keys": "^2.1.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
